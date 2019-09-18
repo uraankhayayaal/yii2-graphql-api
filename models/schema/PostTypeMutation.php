@@ -14,6 +14,7 @@ class PostTypeMutation extends ObjectType
         $config = [
             'fields' => function() {
                 return [
+                    // Метод для создания Post
                     'create' => [
                         'type' => Type::string(),
                         'description' => 'Create post',
@@ -24,6 +25,7 @@ class PostTypeMutation extends ObjectType
                             'created_at' => Type::int(),
                         ],
                         'resolve' => function(Post $post, $args){
+                            // в $post получаем модель с выше из типа мутации
                             $post->setAttributes($args);
                             return $post->save();
                         }

@@ -28,3 +28,29 @@
 2019/09/06 09:43:35 [error] 932#932: *27 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(/var/www/smart.loc/runtime/debug/5d71abb73b202.data): failed to open stream: Permission denied in /var/www/smart.loc/vendor/yiisoft/yii2-debug/src/LogTarget.php on line 74" while reading upstream, client: 127.0.0.1, server: smart.loc, request: "POST /?r=api HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "smart.loc"
 2019/09/06 09:44:59 [error] 932#932: *36 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(/var/www/smart.loc/runtime/debug/5d71ac0b52fc5.data): failed to open stream: Permission denied in /var/www/smart.loc/vendor/yiisoft/yii2-debug/src/LogTarget.php on line 74" while reading upstream, client: 127.0.0.1, server: smart.loc, request: "GET /?r=api HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "smart.loc"
 2019/09/06 09:45:39 [error] 932#932: *36 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(/var/www/smart.loc/runtime/debug/5d71ac3331ffc.data): failed to open stream: Permission denied in /var/www/smart.loc/vendor/yiisoft/yii2-debug/src/LogTarget.php on line 74" while reading upstream, client: 127.0.0.1, server: smart.loc, request: "POST /?r=api HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "smart.loc"
+2019/09/18 10:25:45 [error] 977#977: *1 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request "site/error". in /var/www/smart.loc/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/smart.loc/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#1 /var/www/smart.loc/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "". in /var/www/smart.loc/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/smart.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /var/www/smart.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/smart.loc/web/index.php(12): yi" while reading upstream, client: 127.0.0.1, server: smart.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "smart.loc"
+2019/09/18 10:26:28 [error] 977#977: *1 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request "site/error". in /var/www/smart.loc/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/smart.loc/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#1 /var/www/smart.loc/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "". in /var/www/smart.loc/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/smart.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /var/www/smart.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/smart.loc/web/index.php(12): yi" while reading upstream, client: 127.0.0.1, server: smart.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "smart.loc"
