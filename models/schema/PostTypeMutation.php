@@ -16,7 +16,7 @@ class PostTypeMutation extends ObjectType
                 return [
                     // Метод для создания Post
                     'create' => [
-                        'type' => Type::string(),
+                        'type' => Type::boolean(),
                         'description' => 'Create post',
                         'args' => [
                             'title' => Type::nonNull(Type::string()),
