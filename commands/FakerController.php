@@ -14,7 +14,7 @@ use yii\console\ExitCode;
 class FakerController extends Controller
 {
     public const postsCount = 100;
-    public const commentsCount = 12;
+    public const commentsCount = 100;
     public $faker = null;
 
     public function actionIndex($message = 'hello world')
