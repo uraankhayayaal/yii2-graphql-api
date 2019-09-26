@@ -32,10 +32,15 @@ class Types {
         return self::$comment ?: (self::$comment = new \app\models\schema\CommentType());
     }
 
-
     public static $postTypeMutation;
     public static function postTypeMutation()
     {
         return self::$postTypeMutation ?: (self::$postTypeMutation = new \app\models\schema\PostTypeMutation());
+    }
+
+    public static $commentTypeMutation;
+    public static function commentTypeMutation()
+    {
+        return self::$commentTypeMutation ?: (self::$commentTypeMutation = new \app\models\schema\CommentTypeMutation());
     }
 }

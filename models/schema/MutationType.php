@@ -6,6 +6,7 @@ use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
 
 use app\models\Post;
+use app\models\Comment;
 
 class MutationType extends ObjectType
 {
@@ -21,6 +22,14 @@ class MutationType extends ObjectType
                         'resolve' => function($root, $args){
                             // отправляем модель ниже в мутацию модели Post
                             return new Post();
+                        }
+                    ],
+                    'comment' => [
+                        // Модель Comment имеет свой тип мутации
+                        'type' => Types::commentTypeMutation(),
+                        'resolve' => function($root, $args){
+                            // отправляем модель ниже в мутацию модели Comment
+                            return new Comment();
                         }
                     ]
                 ];

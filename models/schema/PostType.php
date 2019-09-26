@@ -29,6 +29,13 @@ class PostType extends ObjectType
                         'type' => Type::int(),
                         'description' => "Создан",
                     ],
+                    'comments' => [
+                        'type' => Type::listOf(Types::comment()),
+                        'description' => "Спиок комментариев",
+                        'resolve' => function(\app\models\Post $post){
+                            return $post->comments;
+                        }
+                    ]
                 ];
             }
         ];
